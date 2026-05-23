@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🗺️ Java实习面试 完整学习路线图 | 从零到Offer</title>
+<meta name="description" content="2026 Java实习面试完整学习路线图：15个知识域·100+考点·互动节点·点击展开详情。上千次沟通+30场面试实战总结。">
+<meta name="keywords" content="Java面试路线图,Java学习路线,Java实习,2026面试,Java roadmap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+header{text-align:center;padding:40px 20px 20px;background:linear-gradient(135deg,#1e293b,#0f172a)}
+header h1{font-size:2em;color:#38bdf8;margin-bottom:8px}
+header p{color:#94a3b8;font-size:0.95em}
+.stats{display:flex;justify-content:center;gap:24px;margin:16px 0;flex-wrap:wrap}
+.stat{background:#1e293b;padding:10px 16px;border-radius:8px;text-align:center}
+.stat .num{font-size:1.3em;color:#facc15;font-weight:bold}
+.stat .label{color:#94a3b8;font-size:0.8em}
+.timeline{max-width:900px;margin:30px auto;padding:0 20px}
+.phase{margin:20px 0;background:#1e293b;border-radius:12px;overflow:hidden;border-left:4px solid #38bdf8}
+.phase-header{padding:16px 20px;cursor:pointer;display:flex;align-items:center;gap:12px}
+.phase-header:hover{background:#283548}
+.phase-icon{font-size:1.5em}
+.phase-title{font-size:1.1em;color:#38bdf8;font-weight:bold}
+.phase-meta{color:#94a3b8;font-size:0.85em;margin-left:auto}
+.phase-body{padding:0 20px 20px;display:none}
+.phase-body.open{display:block}
+.topic{background:#0f172a;border-radius:8px;padding:12px 16px;margin:8px 0;border:1px solid #334155}
+.topic-header{display:flex;align-items:center;gap:8px;cursor:pointer}
+.topic-header:hover{color:#facc15}
+.topic-icon{font-size:1.1em}
+.topic-name{font-weight:600;font-size:0.95em}
+.topic-time{color:#64748b;font-size:0.8em;margin-left:auto}
+.topic-detail{display:none;margin-top:10px;padding-top:10px;border-top:1px solid #334155;font-size:0.9em;color:#94a3b8}
+.topic-detail.open{display:block}
+.topic-detail ul{padding-left:20px}
+.topic-detail li{margin:4px 0}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:0.75em;margin:2px}
+.tag-hot{background:#dc262620;color:#f87171}
+.tag-must{background:#facc1520;color:#facc15}
+.tag-trend{background:#38bdf820;color:#38bdf8}
+.cta{text-align:center;margin:40px 20px;padding:30px;background:linear-gradient(135deg,#1e293b,#0f172a);border-radius:16px;border:2px solid #facc15}
+.cta h2{color:#facc15;margin-bottom:8px}
+.cta p{color:#94a3b8;margin-bottom:16px}
+.cta a{display:inline-block;background:#facc15;color:#0f172a;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:bold;margin:6px}
+.cta a:hover{opacity:0.9}
+.donate{text-align:center;margin:30px 0;padding:20px}
+.donate img{width:180px;border-radius:12px}
+.donate p{color:#94a3b8;margin:8px 0}
+footer{text-align:center;padding:20px;color:#64748b;font-size:0.8em}
+</style>
+</head>
+<body>
+<header>
+<h1>🗺️ Java实习面试 完整学习路线图</h1>
+<p>15个知识域 · 100+考点 · 按面试出现率排序 · 点击展开详情</p>
+<div class="stats">
+<div class="stat"><div class="num">15</div><div class="label">知识域</div></div>
+<div class="stat"><div class="num">100+</div><div class="label">核心考点</div></div>
+<div class="stat"><div class="num">85%</div><div class="label">面试覆盖率</div></div>
+<div class="stat"><div class="num">30+</div><div class="label">实战面试验证</div></div>
+</div>
+</header>
+
+<div class="timeline">
+<div class="phase"><div class="phase-header" onclick="this.parentElement.querySelector('.phase-body').classList.toggle('open')"><span class="phase-icon">🔴</span><span class="phase-title">阶段1：Java核心基础（面试出现率95%）</span><span class="phase-meta">2-3天</span></div>
+<div class="phase-body">
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">📦</span><span class="topic-name">HashMap底层原理</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>数组+链表+红黑树、put流程</li><li>扩容机制（负载因子0.75、2倍扩容）</li><li>JDK7头插法→JDK8尾插法</li><li>追问：为什么红黑树不用AVL？</li></ul></div></div>
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🔐</span><span class="topic-name">ConcurrentHashMap</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>JDK7 Segment分段锁 → JDK8 CAS+synchronized</li><li>size()如何统计？</li><li>追问：和Hashtable区别？</li></ul></div></div>
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🧵</span><span class="topic-name">多线程与并发</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>synchronized锁升级（偏向→轻量→重量）</li><li>volatile可见性+禁止重排序</li><li>线程池7参数+拒绝策略</li><li>AQS原理</li></ul></div></div>
+</div></div>
+
+<div class="phase"><div class="phase-header" onclick="this.parentElement.querySelector('.phase-body').classList.toggle('open')"><span class="phase-icon">🟠</span><span class="phase-title">阶段2：JVM深入（面试出现率85%）</span><span class="phase-meta">2天</span></div>
+<div class="phase-body">
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🧠</span><span class="topic-name">JVM内存模型</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>堆/栈/方法区/程序计数器/本地方法栈</li><li>对象创建过程（类加载→分配内存→初始化）</li><li>追问：方法区和元空间关系？</li></ul></div></div>
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🗑️</span><span class="topic-name">GC垃圾回收</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>标记清除/复制/标记整理/分代收集</li><li>CMS vs G1 vs ZGC</li><li>追问：什么时候触发Full GC？</li></ul></div></div>
+</div></div>
+
+<div class="phase"><div class="phase-header" onclick="this.parentElement.querySelector('.phase-body').classList.toggle('open')"><span class="phase-icon">🟡</span><span class="phase-title">阶段3：Spring全家桶（面试出现率90%）</span><span class="phase-meta">3天</span></div>
+<div class="phase-body">
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🚀</span><span class="topic-name">Spring Boot核心</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>@SpringBootApplication = 3个注解组合</li><li>自动配置原理（spring.factories）</li><li>Starter机制</li></ul></div></div>
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🔀</span><span class="topic-name">Spring Cloud Alibaba</span><span class="tag tag-trend">2026热点</span></div>
+<div class="topic-detail"><ul><li>Nacos注册中心+配置中心</li><li>Sentinel限流熔断降级</li><li>Gateway路由鉴权</li></ul></div></div>
+</div></div>
+
+<div class="phase"><div class="phase-header" onclick="this.parentElement.querySelector('.phase-body').classList.toggle('open')"><span class="phase-icon">🟢</span><span class="phase-title">阶段4：数据库与缓存（面试出现率90%）</span><span class="phase-meta">2天</span></div>
+<div class="phase-body">
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🗄️</span><span class="topic-name">MySQL核心</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>索引B+树、聚簇vs非聚簇</li><li>EXPLAIN执行计划解读</li><li>慢SQL优化七步法</li><li>事务隔离级别+MVCC</li></ul></div></div>
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">⚡</span><span class="topic-name">Redis核心</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>5种数据结构+场景</li><li>缓存穿透/击穿/雪崩</li><li>分布式锁（SETNX→Redisson）</li></ul></div></div>
+</div></div>
+
+<div class="phase"><div class="phase-header" onclick="this.parentElement.querySelector('.phase-body').classList.toggle('open')"><span class="phase-icon">🔵</span><span class="phase-title">阶段5：分布式与微服务（面试出现率80%）</span><span class="phase-meta">2天</span></div>
+<div class="phase-body">
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🌐</span><span class="topic-name">分布式理论</span><span class="tag tag-must">必考</span></div>
+<div class="topic-detail"><ul><li>CAP定理（画三角形+举例）</li><li>BASE理论</li><li>分布式事务：2PC/TCC/Seata AT</li></ul></div></div>
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">📨</span><span class="topic-name">消息队列</span><span class="tag tag-hot">高频</span></div>
+<div class="topic-detail"><ul><li>Kafka vs RocketMQ vs RabbitMQ</li><li>消息可靠性（生产者确认→Broker持久化→消费者ACK）</li><li>幂等性设计</li></ul></div></div>
+</div></div>
+
+<div class="phase"><div class="phase-header" onclick="this.parentElement.querySelector('.phase-body').classList.toggle('open')"><span class="phase-icon">🟣</span><span class="phase-title">阶段6：2026必考新热点</span><span class="phase-meta">1天</span></div>
+<div class="phase-body">
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">🤖</span><span class="topic-name">Spring AI + 大模型</span><span class="tag tag-trend">2026必考</span></div>
+<div class="topic-detail"><ul><li>RAG核心流程（分块→向量化→检索→增强生成）</li><li>Agent = LLM + 规划 + 记忆 + 工具</li><li>追问：RAG和微调的区别？</li></ul></div></div>
+<div class="topic"><div class="topic-header" onclick="this.parentElement.querySelector('.topic-detail').classList.toggle('open')"><span class="topic-icon">📦</span><span class="topic-name">Docker + 容器化</span><span class="tag tag-hot">高频</span></div>
+<div class="topic-detail"><ul><li>Dockerfile核心指令</li><li>docker-compose编排</li><li>追问：镜像分层原理？</li></ul></div></div>
+</div></div>
+</div>
+
+<div class="cta">
+<h2>🎯 路线图只是开始 — 实战才见真章</h2>
+<p>6大阶段·15个知识域·100+考点全在这里。面试官要听的是"你做过什么"不是说"你学过什么"。</p>
+<a href="https://Abyte-zym.github.io/arsenal/">📚 进入弹药库（40+免费工具）</a>
+<a href="https://Abyte-zym.github.io/arsenal/shop.html">🛒 装备商店 ¥9.9起</a>
+</div>
+
+<div class="donate">
+<p>☕ 帮到你了？请作者喝杯咖啡</p>
+<img src="qrcode.png" alt="赞赏码">
+<p style="font-size:0.8em;color:#64748b">微信扫码赞赏 | 上千次沟通·30场面试实战总结</p>
+</div>
+
+<footer>© 2026 Java面试研究社 · <a href="https://Abyte-zym.github.io/arsenal/" style="color:#38bdf8">弹药库</a> · 全部免费·帮到你再赞赏</footer>
+
+<script>
+document.querySelector('.phase-body').classList.add('open');
+</script>
+</body>
+</html>
